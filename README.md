@@ -1,5 +1,10 @@
 # Route Viewer
 
+
+## Deploy
+
+`npm run predeploy && npm run deploy`
+
 ## Docs
 
 - [gpxparser](https://www.npmjs.com/package/gpxparser)
