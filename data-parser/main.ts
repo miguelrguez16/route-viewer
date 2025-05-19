@@ -34,6 +34,15 @@ const gpxToGeoJSON = () => {
 
 
 const generateUniqueJson = () => {
+
+    // check if unique.json already exists
+    const endFile = path.join(__dirname, 'json-files', 'unique.json');
+    if (fs.existsSync(endFile)) {
+        console.log('unique.json already exists. Removing.');
+        fs.unlinkSync(endFile);
+    }
+
+
     const basePath = path.join(__dirname, 'json-files');
     const files = fs.readdirSync(basePath);
 
@@ -46,13 +55,20 @@ const generateUniqueJson = () => {
         const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
         const coordinates = data.features[0].geometry.coordinates;
 
+        const fileName = path.basename(filePath);
+        console.log('File:', fileName);
+
+        const routeName = file.replace('.json', '').split('-').join(' ');
+        console.log('Route Name:', routeName);
         const route = {
-            name: file.replace('.json', ''),
+            name: routeName,
             coordinates: coordinates.map((coord: number[]) => ({
                 lat: coord[1],
                 lng: coord[0],
-                alt: coord[2] || 0 // Use 0 if altitude is not available
-            }))
+                alt: coord[2] || 0
+            })),
+            topAltitude: Math.max(...coordinates.map((coord: number[]) => coord[2] || 0)),
+            bottomAltitude: Math.min(...coordinates.map((coord: number[]) => coord[2] || 0)),
         };
         uniqueJson.routes.push(route);
     });
@@ -67,8 +83,8 @@ const generateUniqueJson = () => {
 
 const main = () => {
 
-      //gpxToGeoJSON();
-  generateUniqueJson();
+  //     gpxToGeoJSON();
+  generateUniqueJson(); 
 }
 
 main();

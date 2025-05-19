@@ -2,7 +2,7 @@
   "totalRoutes": 27,
   "routes": [
     {
-      "name": "cangas-del-narcea-santuario-del-acebo",
+      "name": "cangas del narcea santuario del acebo",
       "coordinates": [
         {
           "lat": 43.177362,
@@ -659,10 +659,12 @@
           "lng": -6.499723,
           "alt": 1178.427
         }
-      ]
+      ],
+      "topAltitude": 1180.485,
+      "bottomAltitude": 382.909
     },
     {
-      "name": "circular-ruta-de-las-pasarelas-alquezar-asque",
+      "name": "circular ruta de las pasarelas alquezar asque",
       "coordinates": [
         {
           "lat": 42.172468,
@@ -2049,10 +2051,12 @@
           "lng": 0.02268,
           "alt": 660.009
         }
-      ]
+      ],
+      "topAltitude": 676.214,
+      "bottomAltitude": 468.473
     },
     {
-      "name": "cola-de-caballo-desde-pradera-de-ordesa",
+      "name": "cola de caballo desde pradera de ordesa",
       "coordinates": [
         {
           "lat": 42.64962,
@@ -3564,10 +3568,12 @@
           "lng": -0.059708,
           "alt": 1314.819
         }
-      ]
+      ],
+      "topAltitude": 1761.367,
+      "bottomAltitude": 1314.454
     },
     {
-      "name": "entrenamiento-trail-valle-de-samuno-tvxs",
+      "name": "entrenamiento trail valle de samuno tvxs",
       "coordinates": [
         {
           "lat": 43.259937,
@@ -5599,10 +5605,12 @@
           "lng": -5.6745,
           "alt": 307.027
         }
-      ]
+      ],
+      "topAltitude": 758.098,
+      "bottomAltitude": 264.018
     },
     {
-      "name": "ermita-de-san-roque-y-santo-angel-desde-soto-de-agues",
+      "name": "ermita de san roque y santo angel desde soto de agues",
       "coordinates": [
         {
           "lat": 43.2026,
@@ -6189,10 +6197,12 @@
           "lng": -5.468019,
           "alt": 432.345
         }
-      ]
+      ],
+      "topAltitude": 438.222,
+      "bottomAltitude": 380.689
     },
     {
-      "name": "la-felguera-castandiello-campu-la-carrerar-lacebal-el-campan",
+      "name": "la felguera castandiello campu la carrerar lacebal el campan",
       "coordinates": [
         {
           "lat": 43.311813,
@@ -7019,10 +7029,12 @@
           "lng": -5.695029,
           "alt": 198.83
         }
-      ]
+      ],
+      "topAltitude": 440.108,
+      "bottomAltitude": 193.245
     },
     {
-      "name": "la-felguera-paxomal-mallau-solis-llagos-de-la-branal-rio",
+      "name": "la felguera paxomal mallau solis llagos de la branal rio",
       "coordinates": [
         {
           "lat": 43.308113,
@@ -8834,10 +8846,12 @@
           "lng": -5.695616,
           "alt": 202.72
         }
-      ]
+      ],
+      "topAltitude": 657.687,
+      "bottomAltitude": 202.319
     },
     {
-      "name": "las-branas-los-mayaos-pr-as-30",
+      "name": "las branas los mayaos pr as 30",
       "coordinates": [
         {
           "lat": 43.104015,
@@ -10029,10 +10043,12 @@
           "lng": -5.508944,
           "alt": 652.709
         }
-      ]
+      ],
+      "topAltitude": 1388.269,
+      "bottomAltitude": 652.709
     },
     {
-      "name": "paseo-cogollu-miguel",
+      "name": "paseo cogollu miguel",
       "coordinates": [
         {
           "lat": 43.296756,
@@ -11719,10 +11735,12 @@
           "lng": -5.683478,
           "alt": 277.589
         }
-      ]
+      ],
+      "topAltitude": 1071.353,
+      "bottomAltitude": 243.813
     },
     {
-      "name": "penamayor-pico-texu-y-pico-trigueiro-desde-les-praeres",
+      "name": "penamayor pico texu y pico trigueiro desde les praeres",
       "coordinates": [
         {
           "lat": 43.321211,
@@ -13064,10 +13082,12 @@
           "lng": -5.4994,
           "alt": 748.375
         }
-      ]
+      ],
+      "topAltitude": 1290.073,
+      "bottomAltitude": 741.688
     },
     {
-      "name": "pr-as-123-pico-les-llombes-pico-carba-y-collado-unquero-desd",
+      "name": "pr as 123 pico les llombes pico carba y collado unquero desd",
       "coordinates": [
         {
           "lat": 43.231724,
@@ -14199,10 +14219,12 @@
           "lng": -5.460068,
           "alt": 513.042
         }
-      ]
+      ],
+      "topAltitude": 1281.692,
+      "bottomAltitude": 513.042
     },
     {
-      "name": "pr-as-48-el-gumial-con-subida-a-pico-del-oso-pico-nogales-pi",
+      "name": "pr as 48 el gumial con subida a pico del oso pico nogales pi",
       "coordinates": [
         {
           "lat": 43.067688,
@@ -15594,10 +15616,12 @@
           "lng": -5.444424,
           "alt": 944.181
         }
-      ]
+      ],
+      "topAltitude": 2063.042,
+      "bottomAltitude": 874.557
     },
     {
-      "name": "pr-as-63-ruta-al-picu-cuyargayos-ruta-al-pico-cullargayos",
+      "name": "pr as 63 ruta al picu cuyargayos ruta al pico cullargayos",
       "coordinates": [
         {
           "lat": 43.201985,
@@ -16844,10 +16868,12 @@
           "lng": -5.467293,
           "alt": 431.5
         }
-      ]
+      ],
+      "topAltitude": 1349.152,
+      "bottomAltitude": 431.5
     },
     {
-      "name": "roble-centenarios-y-tabayon-del-mongallu-desde-tarna-pr60",
+      "name": "roble centenarios y tabayon del mongallu desde tarna pr60",
       "coordinates": [
         {
           "lat": 43.110094,
@@ -17774,10 +17800,12 @@
           "lng": -5.228945,
           "alt": 992.815
         }
-      ]
+      ],
+      "topAltitude": 1289.335,
+      "bottomAltitude": 991.032
     },
     {
-      "name": "ruta-circular-ciano-mayau-miguel",
+      "name": "ruta circular ciano mayau miguel",
       "coordinates": [
         {
           "lat": 43.28796,
@@ -19064,10 +19092,12 @@
           "lng": -5.670402,
           "alt": 271.513
         }
-      ]
+      ],
+      "topAltitude": 951.988,
+      "bottomAltitude": 271.513
     },
     {
-      "name": "ruta-collada-de-isornu",
+      "name": "ruta collada de isornu",
       "coordinates": [
         {
           "lat": 43.200603,
@@ -21379,10 +21409,12 @@
           "lng": -5.47128,
           "alt": 418.055
         }
-      ]
+      ],
+      "topAltitude": 1170.083,
+      "bottomAltitude": 414.019
     },
     {
-      "name": "ruta-con-trail-la-campa-labeduriu",
+      "name": "ruta con trail la campa labeduriu",
       "coordinates": [
         {
           "lat": 43.286236,
@@ -23474,10 +23506,12 @@
           "lng": -5.637972,
           "alt": 236.773
         }
-      ]
+      ],
+      "topAltitude": 858.626,
+      "bottomAltitude": 235.385
     },
     {
-      "name": "ruta-costera-minarzo-faro-larino",
+      "name": "ruta costera minarzo faro larino",
       "coordinates": [
         {
           "lat": 42.801395,
@@ -24219,10 +24253,12 @@
           "lng": -9.135169,
           "alt": 37.593
         }
-      ]
+      ],
+      "topAltitude": 56.229,
+      "bottomAltitude": 4.876
     },
     {
-      "name": "ruta-desde-la-pesanca-subida-pico-vizcares-y-mas",
+      "name": "ruta desde la pesanca subida pico vizcares y mas",
       "coordinates": [
         {
           "lat": 43.253104,
@@ -25254,10 +25290,12 @@
           "lng": -5.333365,
           "alt": 408.986
         }
-      ]
+      ],
+      "topAltitude": 1404.223,
+      "bottomAltitude": 408.986
     },
     {
-      "name": "ruta-la-colladiella-picu-tres-concejos-picu-la-guarda-picu-e",
+      "name": "ruta la colladiella picu tres concejos picu la guarda picu e",
       "coordinates": [
         {
           "lat": 43.224735,
@@ -26254,10 +26292,12 @@
           "lng": -5.645816,
           "alt": 846.209
         }
-      ]
+      ],
+      "topAltitude": 1094.964,
+      "bottomAltitude": 846.209
     },
     {
-      "name": "ruta-la-foz-figares-la-collada",
+      "name": "ruta la foz figares la collada",
       "coordinates": [
         {
           "lat": 43.248775,
@@ -27009,10 +27049,12 @@
           "lng": -5.871586,
           "alt": 261.381
         }
-      ]
+      ],
+      "topAltitude": 410.086,
+      "bottomAltitude": 185.575
     },
     {
-      "name": "ruta-lineal-desde-el-alto-la-mozqueta-al-pico-polio-",
+      "name": "ruta lineal desde el alto la mozqueta al pico polio ",
       "coordinates": [
         {
           "lat": 43.230011,
@@ -28029,10 +28071,12 @@
           "lng": -5.659576,
           "alt": 850.937
         }
-      ]
+      ],
+      "topAltitude": 1044.228,
+      "bottomAltitude": 832.539
     },
     {
-      "name": "ruta-molin-de-pra-foces-del-rio-pendon-pico-varallonga",
+      "name": "ruta molin de pra foces del rio pendon pico varallonga",
       "coordinates": [
         {
           "lat": 43.340076,
@@ -30134,10 +30178,12 @@
           "lng": -5.502291,
           "alt": 261.009
         }
-      ]
+      ],
+      "topAltitude": 889.098,
+      "bottomAltitude": 255.009
     },
     {
-      "name": "ruta-picu-pienzu-pr-as-71",
+      "name": "ruta picu pienzu pr as 71",
       "coordinates": [
         {
           "lat": 43.439048,
@@ -30994,10 +31040,12 @@
           "lng": -5.193408,
           "alt": 580.556
         }
-      ]
+      ],
+      "topAltitude": 1163.431,
+      "bottomAltitude": 578.832
     },
     {
-      "name": "soto-llorio-lacebal-soto-llorio-pr-as-53",
+      "name": "soto llorio lacebal soto llorio pr as 53",
       "coordinates": [
         {
           "lat": 43.230204,
@@ -32044,10 +32092,12 @@
           "lng": -5.520288,
           "alt": 329.616
         }
-      ]
+      ],
+      "topAltitude": 781.089,
+      "bottomAltitude": 326.25
     },
     {
-      "name": "subida-a-pena-villa-desde-la-felguera",
+      "name": "subida a pena villa desde la felguera",
       "coordinates": [
         {
           "lat": 43.311985,
@@ -33949,10 +33999,12 @@
           "lng": -5.706584,
           "alt": 189.005
         }
-      ]
+      ],
+      "topAltitude": 532.094,
+      "bottomAltitude": 182.02
     },
     {
-      "name": "travesia-la-raya-pico-ventanona-desfiladero-de-los-arrudos",
+      "name": "travesia la raya pico ventanona desfiladero de los arrudos",
       "coordinates": [
         {
           "lat": 43.065765,
@@ -35644,7 +35696,9 @@
           "lng": -5.40953,
           "alt": 670.722
         }
-      ]
+      ],
+      "topAltitude": 1906.523,
+      "bottomAltitude": 648.159
     }
   ]
 }
