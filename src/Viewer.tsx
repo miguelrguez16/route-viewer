@@ -1,8 +1,8 @@
 
+import { Routes } from './components/routes/Routes';
 import './leaflet.css'
 import { MapContainer, TileLayer } from 'react-leaflet'
-import { Routes } from './routes/Routes';
-
+ 
 export const Viewer = () => {
   const oviedoCoordinates = [{ lat: 43.36227016055732, lng: -5.848699146428481 }];
 
