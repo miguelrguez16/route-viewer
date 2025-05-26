@@ -7,7 +7,12 @@
 ## Docs
 
 - [gpxparser](https://www.npmjs.com/package/gpxparser)
-- [gpx-maps-react](https://www.manuelkruisz.com/blog/posts/gpx-maps-react)
+- [gpx-maps-react](https://www.manuelkruisz.com/blog/posts/gpx-maps-react)+
+
+
+## Filter
+
+- Enable filtering by name, altitude and longitude
 
 ## Production
 
