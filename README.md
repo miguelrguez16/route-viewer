@@ -13,6 +13,8 @@
 ## Filter
 
 - Enable filtering by name, altitude and longitude
+- Enable show route name
+- Enable show top route point
 
 ## Production
 
