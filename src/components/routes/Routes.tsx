@@ -10,12 +10,12 @@ const waypointIcon = L.icon({
 });
 
 export const Routes = () => {
-    const {filter:routeToFilter} = useFilter();
-                   
+    const { filter: routeToFilter } = useFilter();
+
     const routes = RoutesFile.routes;
     return (
         <>
-            {routes.filter(r=> r.name.includes(routeToFilter)).map((route) => (
+            {routes.filter(r => r.name.includes(routeToFilter)).map((route) => (
                 <>
                     <Marker position={route.coordinates[0]} icon={waypointIcon}>
                         <Popup>
@@ -43,5 +43,5 @@ export const Routes = () => {
                 </>
             ))}
         </>
-    ) 
+    )
 }
