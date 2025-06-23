@@ -27,8 +27,7 @@ export const RouteSimple: React.FC<Props> = ({
 
     const waypointIcon = useMemo(() => {
         const value = new Number(25 * zoomLevel / 20).valueOf();
-        console.log("Zoom level:", zoomLevel , "Waypoint icon size:", value);
-        return L.icon({
+         return L.icon({
             iconUrl: Waypoint,
             iconSize: [value, value]
         });

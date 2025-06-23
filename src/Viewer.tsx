@@ -11,10 +11,7 @@ export const Viewer = () => {
 
   const MapEventHandler = () => {
     useMapEvents({
-      zoom: (e) => {
-        console.log('Map zoomed to level:', e.target.getZoom());
-        setZoomLevel(e.target.getZoom()); // Update zoom level in context
-      },
+      zoom: (e) => setZoomLevel(e.target.getZoom()),
     });
     return null;
   };
