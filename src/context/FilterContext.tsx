@@ -1,8 +1,10 @@
 import React, { createContext, useContext, useState } from 'react';
 
 interface FilterContextType {
-    filter: string;
-    setFilter: (filter: string) => void;
+    routeNameFilter: string;
+    setRouteNameFilter: (filter: string) => void;
+    zoomLevel: number;
+    setZoomLevel: (zoom: number) => void;
 }
 
 const FilterContext = createContext<FilterContextType | undefined>(undefined);
@@ -12,14 +14,17 @@ interface FilterProviderProps {
 }
 
 export const FilterProvider: React.FC<FilterProviderProps> = ({ children }) => {
-    const [filter, setFilter] = useState<string>('');
+    const [routeNameFilter, setRouteNameFilter] = useState<string>('');
+    const [zoomLevel, setZoomLevel] = useState<number>(13); // Example zoom level state
 
     const value = React.useMemo(
         () => ({
-            filter,
-            setFilter,
+            zoomLevel,
+            setZoomLevel,
+            routeNameFilter,
+            setRouteNameFilter,
         }),
-        [filter]
+        [routeNameFilter,zoomLevel]
     );
 
     return (
