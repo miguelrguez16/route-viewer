@@ -27,7 +27,7 @@ export const RouteSimple: React.FC<Props> = ({
 
     const waypointIcon = useMemo(() => {
         const value = new Number(25 * zoomLevel / 20).valueOf();
-         return L.icon({
+        return L.icon({
             iconUrl: Waypoint,
             iconSize: [value, value]
         });
@@ -57,12 +57,19 @@ export const RouteSimple: React.FC<Props> = ({
                 positions={coordinates}
                 interactive={true}
                 eventHandlers={{
-                    mouseover: () => {
+                    mouseover: (e) => {
                         setIsHovered(true);
+                        e.target.setStyle({ color: 'orange' });
+
                     },
-                    mouseout: () => {
+                    mouseout: (e) => {
                         setIsHovered(false);
+                        e.target.setStyle({ color: 'blue' });
+
                     },
+                    click: (e) => {
+                        e.target.openPopup(); e.target.setStyle({ color: 'orange' });
+                    }
                 }}
             >
                 <Tooltip sticky>{name}</Tooltip><Marker
