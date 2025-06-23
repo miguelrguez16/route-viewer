@@ -27,8 +27,8 @@ export const Viewer = () => {
         detectRetina={true}
         maxNativeZoom={19}
       />
-      <Routes />      <MapEventHandler /> {/* Add the event handler component here */}
-
+      <Routes />
+      <MapEventHandler />
     </MapContainer>
   )
 }
