@@ -8,7 +8,7 @@ createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <div style={{  height: '100vdh' }}>
     <FilterProvider>
-      <Filter />
+      {/* <Filter /> */}
       <Viewer />
     </FilterProvider></div>
   </StrictMode>,

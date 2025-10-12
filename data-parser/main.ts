@@ -83,8 +83,8 @@ const generateUniqueJson = () => {
 
 const main = () => {
 
-   //   gpxToGeoJSON();
-   generateUniqueJson(); 
+//gpxToGeoJSON();
+    generateUniqueJson(); 
 }
 
 main();
