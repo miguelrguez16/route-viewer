@@ -1,0 +1,105 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Parse GPX Files",
+            "detail": "Convert GPX files to GeoJSON format",
+            "type": "shell",
+            "command": "node",
+            "args": [
+                "${workspaceFolder}/data-parser/main.js"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "new",
+                "clear": true,
+                "close": false,
+                "focus": true
+            },
+            "problemMatcher": [],
+            "icon": {
+                "id": "map",
+                "color": "terminal.ansiGreen"
+            },
+            "options": {
+                "statusbar": {
+                    "color": "red"
+                }
+            }
+
+        },
+        {
+            "label": "Start Development Server",
+            "detail": "Start Vite dev server",
+            "type": "npm",
+            "script": "dev",
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "new",
+                "clear": true,
+                "focus": true
+            },
+            "icon": {
+                "id": "rocket",
+                "color": "terminal.ansiBlue"
+            },
+            "options": {
+                "statusbar": {
+                    "color": "#07f307"
+                }
+            }
+
+        },
+        {
+            "label": "Build Project",
+            "detail": "Build for production",
+            "type": "npm",
+            "script": "build",
+            "group": "build",
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "silent",
+                "clear": true
+            },
+            "icon": {
+                "id": "package",
+                "color": "terminal.ansiYellow"
+            },
+            "options": {
+                "statusbar": {
+                    "color": "#ffd700"
+                }
+            }
+        },
+        {
+            "label": "Run Tests",
+            "detail": "Execute test suite",
+            "type": "npm",
+            "script": "test",
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated",
+                "clear": true,
+                "focus": true
+            },
+            "icon": {
+                "id": "beaker",
+                "color": "terminal.ansiMagenta"
+            },
+            "options": {
+                "statusbar": {
+                    "color": "#ff69b4"
+                }
+            }
+        }
+    ]
+}
