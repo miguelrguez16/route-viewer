@@ -100,6 +100,37 @@
                     "color": "#ff69b4"
                 }
             }
+        },
+        {
+            "label": "Deploy to GitHub Pages",
+            "detail": "Build and deploy to GitHub Pages",
+            "type": "shell",
+            "command": "npm",
+            "args": [
+                "run",
+                "predeploy",
+                "&&",
+                "npm",
+                "run",
+                "deploy"
+            ],
+            "group": "none",
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "new",
+                "clear": true,
+                "focus": true
+            },
+            "icon": {
+                "id": "globe",
+                "color": "terminal.ansiCyan"
+            },
+            "options": {
+                "statusbar": {
+                    "color": "#4169e1"
+                }
+            }
         }
     ]
 }
