@@ -111,6 +111,11 @@
         left: 12px;
         top: 12px;
     }
+
+    .leaflet-top.leaflet-right {
+        right: 12px;
+        top: 12px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -122,6 +127,7 @@
         max-height: 35vh;
         font-size: 11px;
         padding: 10px;
+        border-radius: 6px;
     }
 
     .theme-toggle-container {
@@ -131,6 +137,11 @@
 
     .leaflet-top.leaflet-left {
         left: 8px;
+        top: 8px;
+    }
+
+    .leaflet-top.leaflet-right {
+        right: 8px;
         top: 8px;
     }
 
@@ -144,6 +155,16 @@
         height: 32px;
         font-size: 18px;
         line-height: 32px;
+    }
+
+    /* Leaflet controls smaller on very small screens */
+    .leaflet-control {
+        border-radius: 6px;
+    }
+
+    .leaflet-touch .leaflet-control-layers-toggle {
+        width: 30px;
+        height: 30px;
     }
 }
 

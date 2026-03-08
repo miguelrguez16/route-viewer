@@ -27,20 +27,14 @@
     line-height: 1;
 }
 
-/* Light theme */
-[data-theme="light"] .theme-toggle {
-    --bg-primary: #ffffff;
-    --bg-hover: #f5f5f5;
-    --border-color: #e0e0e0;
-    --shadow-color: rgba(0, 0, 0, 0.1);
+/* Light theme - hover state */
+:root .theme-toggle:hover {
+    background-color: #f5f5f5;
 }
 
-/* Dark theme */
-[data-theme="dark"] .theme-toggle {
-    --bg-primary: #2a2a2a;
-    --bg-hover: #333333;
-    --border-color: #444444;
-    --shadow-color: rgba(0, 0, 0, 0.5);
+/* Dark theme - hover state */
+[data-theme="dark"] .theme-toggle:hover {
+    background-color: #333333;
 }
 
 /* Responsive */

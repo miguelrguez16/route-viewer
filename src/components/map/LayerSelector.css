@@ -1,0 +1,118 @@
+.layer-selector {
+    z-index: 350;
+}
+
+/* Leaflet Layers Control Customization */
+.leaflet-control-layers {
+    border-radius: 8px;
+    box-shadow: 0 2px 8px var(--shadow-color);
+    background-color: var(--bg-primary);
+    border: 1px solid var(--border-color);
+}
+
+.leaflet-control-layers-list {
+    padding: 8px;
+}
+
+.leaflet-control-layers-selector {
+    accent-color: var(--primary-color, #007bff);
+    margin-right: 6px;
+    cursor: pointer;
+}
+
+.leaflet-control-layers label {
+    color: var(--text-primary);
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin: 6px 0;
+    cursor: pointer;
+    user-select: none;
+    padding: 4px 6px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+.leaflet-control-layers label:hover {
+    background-color: var(--bg-secondary);
+}
+
+.leaflet-control-layers-separator {
+    border-top: 1px solid var(--border-color);
+    margin: 6px 0;
+}
+
+.leaflet-control-layers-toggle {
+    width: 36px;
+    height: 36px;
+}
+
+.leaflet-control-layers-toggle span {
+    background-color: var(--bg-primary);
+    border: 1px solid var(--border-color);
+}
+
+/* Use global theme variables from index.css */
+/* Dark theme specific adjustment for toggle */
+@media (prefers-color-scheme: dark) {
+    .leaflet-control-layers-toggle span {
+        background-color: var(--bg-secondary);
+    }
+}
+
+/* Mobile Responsive - Tablets and up */
+@media (max-width: 768px) {
+    .leaflet-control-layers {
+        font-size: 12px;
+    }
+
+    .leaflet-control-layers label {
+        font-size: 12px;
+        margin: 4px 0;
+        padding: 3px 4px;
+    }
+
+    .leaflet-control-layers-list {
+        padding: 6px;
+    }
+
+    .leaflet-control-layers-toggle {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+/* Mobile - Small screens */
+@media (max-width: 480px) {
+    .leaflet-control-layers {
+        font-size: 11px;
+        max-width: 90vw;
+    }
+
+    .leaflet-control-layers label {
+        font-size: 11px;
+        gap: 4px;
+        margin: 3px 0;
+        padding: 2px 4px;
+    }
+
+    .leaflet-control-layers-list {
+        padding: 4px;
+        max-height: 50vh;
+        overflow-y: auto;
+    }
+
+    .leaflet-control-layers-toggle {
+        width: 28px;
+        height: 28px;
+        min-width: 28px;
+        min-height: 28px;
+    }
+
+    .leaflet-control-layers-selector {
+        margin-right: 4px;
+        width: 14px;
+        height: 14px;
+    }
+}

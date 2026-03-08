@@ -3,6 +3,8 @@ import { Routes } from './components/routes/Routes';
 import { Legend } from './components/legend/Legend';
 import { ThemeToggle } from './components/theme/ThemeToggle';
 import { RouteInfo } from './components/routes/RouteInfo';
+import { LayerSelector } from './components/map/LayerSelector';
+import { LocationControl } from './components/map/LocationControl';
 import { useFilter } from './context/FilterContext';
 import './leaflet.css'
 import './Viewer.css'
@@ -34,7 +36,9 @@ export const Viewer = () => {
                 scrollWheelZoom={true} 
                 style={{ height: '100vh', width: '100%' }}
                 className="route-map"
+                zoomControl={true}
             >
+                {/* Base layer with OSM - will be replaced by LayerSelector */}
                 <TileLayer 
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -44,8 +48,18 @@ export const Viewer = () => {
                     detectRetina={true}
                     maxNativeZoom={19}
                 />
+
+                {/* Layer selector */}
+                <LayerSelector />
+
+                {/* Add routes */}
                 <Routes />
+
+                {/* Map event handler */}
                 <MapEventHandler onZoom={setZoomLevel} />
+
+                {/* Location control */}
+                <LocationControl />
             </MapContainer>
             
             {/* Legend */}

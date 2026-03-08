@@ -1,5 +1,6 @@
 import React from 'react';
 import { useFilter } from '../../context/FilterContext';
+import { ElevationProfile } from '../map/ElevationProfile';
 import './RouteInfo.css';
 
 interface RouteInfoProps {
@@ -16,6 +17,7 @@ export const RouteInfo: React.FC<RouteInfoProps> = ({
     topAltitude,
 }) => {
     const { setSelectedRouteId } = useFilter();
+    const [showElevation, setShowElevation] = React.useState(false);
 
     if (!routeId || !name || !coordinates) {
         return (
@@ -58,48 +60,72 @@ export const RouteInfo: React.FC<RouteInfoProps> = ({
             </div>
 
             <div className="route-info-content">
-                <div className="route-info-grid">
-                    <div className="route-info-item">
-                        <span className="route-info-label">📏 Distancia</span>
-                        <span className="route-info-value">{distance.toFixed(1)} km</span>
-                    </div>
-
-                    <div className="route-info-item">
-                        <span className="route-info-label">📈 Desnivel</span>
-                        <span className="route-info-value">{elevation} m</span>
-                    </div>
-
-                    <div className="route-info-item">
-                        <span className="route-info-label">🏔️ Altitud Máx.</span>
-                        <span className="route-info-value">{maxAlt} m</span>
-                    </div>
-
-                    <div className="route-info-item">
-                        <span className="route-info-label">📍 Altitud Mín.</span>
-                        <span className="route-info-value">{minAlt} m</span>
-                    </div>
-
-                    <div className="route-info-item">
-                        <span className="route-info-label">🚀 Inicio</span>
-                        <span className="route-info-value">{startAlt} m</span>
-                    </div>
-
-                    <div className="route-info-item">
-                        <span className="route-info-label">🏁 Final</span>
-                        <span className="route-info-value">{endAlt} m</span>
-                    </div>
+                {/* Tabs */}
+                <div className="route-info-tabs">
+                    <button 
+                        className={`route-info-tab ${!showElevation ? 'active' : ''}`}
+                        onClick={() => setShowElevation(false)}
+                    >
+                        📊 Datos
+                    </button>
+                    <button 
+                        className={`route-info-tab ${showElevation ? 'active' : ''}`}
+                        onClick={() => setShowElevation(true)}
+                    >
+                        📈 Elevación
+                    </button>
                 </div>
 
-                <div className="route-info-stats">
-                    <div className="route-info-stat">
-                        <span className="route-info-stat-label">Puntos trackeados:</span>
-                        <span className="route-info-stat-value">{coordinates.length}</span>
-                    </div>
-                    <div className="route-info-stat">
-                        <span className="route-info-stat-label">Tiempo estimado:</span>
-                        <span className="route-info-stat-value">~{(distance / 4).toFixed(1)}h</span>
-                    </div>
-                </div>
+                {!showElevation ? (
+                    <>
+                        <div className="route-info-grid">
+                            <div className="route-info-item">
+                                <span className="route-info-label">📏 Distancia</span>
+                                <span className="route-info-value">{distance.toFixed(1)} km</span>
+                            </div>
+
+                            <div className="route-info-item">
+                                <span className="route-info-label">📈 Desnivel</span>
+                                <span className="route-info-value">{elevation} m</span>
+                            </div>
+
+                            <div className="route-info-item">
+                                <span className="route-info-label">🏔️ Altitud Máx.</span>
+                                <span className="route-info-value">{maxAlt} m</span>
+                            </div>
+
+                            <div className="route-info-item">
+                                <span className="route-info-label">📍 Altitud Mín.</span>
+                                <span className="route-info-value">{minAlt} m</span>
+                            </div>
+
+                            <div className="route-info-item">
+                                <span className="route-info-label">🚀 Inicio</span>
+                                <span className="route-info-value">{startAlt} m</span>
+                            </div>
+
+                            <div className="route-info-item">
+                                <span className="route-info-label">🏁 Final</span>
+                                <span className="route-info-value">{endAlt} m</span>
+                            </div>
+                        </div>
+
+                        <div className="route-info-stats">
+                            <div className="route-info-stat">
+                                <span className="route-info-stat-label">Puntos trackeados:</span>
+                                <span className="route-info-stat-value">{coordinates.length}</span>
+                            </div>
+                            <div className="route-info-stat">
+                                <span className="route-info-stat-label">Tiempo estimado:</span>
+                                <span className="route-info-stat-value">~{(distance / 4).toFixed(1)}h</span>
+                            </div>
+                        </div>
+                    </>
+                ) : (
+                    <ElevationProfile 
+                        coordinates={coordinates} 
+                    />
+                )}
             </div>
 
             <div className="route-info-footer">
