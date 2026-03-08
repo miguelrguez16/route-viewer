@@ -13,7 +13,7 @@
 /* Legend Container */
 .legend-container {
     position: absolute;
-    top: 80px;
+    top: 100px;
     left: 16px;
     z-index: 400;
     max-height: calc(100vh - 100px);
@@ -120,7 +120,7 @@
 
 @media (max-width: 480px) {
     .legend-container {
-        top: 60px;
+        top: 100px;
         left: 8px;
         right: 8px;
         max-width: calc(100vw - 16px);
