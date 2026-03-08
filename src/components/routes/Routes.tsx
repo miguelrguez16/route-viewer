@@ -2,8 +2,6 @@ import RoutesFile from "./routes.json";
 import { useFilter } from "../../context/FilterContext";
 import { RouteSimple } from './RouteSimple';
 
-
-
 export const Routes = () => {
     const { routeNameFilter } = useFilter();
 
@@ -12,8 +10,14 @@ export const Routes = () => {
         <>
             {routes
                 .filter((r) => r.name.includes(routeNameFilter))
-                .map((route) => (
-                    <RouteSimple name={route.name} coordinates={route.coordinates} topAltitude={route.topAltitude} />
+                .map((route, index) => (
+                    <RouteSimple 
+                        key={`route-${index}`}
+                        routeId={`route-${index}`}
+                        name={route.name} 
+                        coordinates={route.coordinates} 
+                        topAltitude={route.topAltitude} 
+                    />
                 ))}
         </>
     );
