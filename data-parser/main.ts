@@ -83,10 +83,8 @@ const generateUniqueJson = () => {
 
 const main = () => {
 
-  gpxToGeoJSON();
-  Promise.resolve(() => setTimeout(() => {
-    console.log('Generating unique.json...');
-  }, 2000)).then(generateUniqueJson);
+   //gpxToGeoJSON();
+  generateUniqueJson();
 }
 
 main();

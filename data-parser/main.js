@@ -61,9 +61,7 @@ var generateUniqueJson = function () {
     console.log('Unique JSON saved to:', uniqueJsonFilePath);
 };
 var main = function () {
-    gpxToGeoJSON();
-    Promise.resolve(function () { return setTimeout(function () {
-        console.log('Generating unique.json...');
-    }, 2000); }).then(generateUniqueJson);
+    //gpxToGeoJSON();
+    generateUniqueJson();
 };
 main();
