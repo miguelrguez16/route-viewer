@@ -1,0 +1,177 @@
+.viewer-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.route-map {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/* Legend Container */
+.legend-container {
+    position: absolute;
+    top: 100px;
+    left: 16px;
+    z-index: 400;
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+}
+
+.legend-container::-webkit-scrollbar {
+    width: 6px;
+}
+
+.legend-container::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.legend-container::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+}
+
+[data-theme="dark"] .legend-container::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Theme Toggle Container */
+.theme-toggle-container {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    z-index: 400;
+}
+
+/* Leaflet Controls Positioning */
+.leaflet-control-container {
+    z-index: 300;
+}
+
+.leaflet-top.leaflet-left {
+    left: 16px;
+    top: 16px;
+}
+
+.leaflet-control {
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Dark theme support for Leaflet controls */
+[data-theme="dark"] .leaflet-control {
+    background-color: #2a2a2a;
+    border-color: #444444;
+}
+
+[data-theme="dark"] .leaflet-control-zoom-in,
+[data-theme="dark"] .leaflet-control-zoom-out {
+    color: #e8e8e8;
+}
+
+[data-theme="dark"] .leaflet-control a {
+    color: #e8e8e8;
+}
+
+[data-theme="dark"] .leaflet-control a:hover {
+    color: #0ea5e9;
+    background-color: #333333;
+}
+
+/* Popup adjustments for responsive */
+.leaflet-popup {
+    margin-bottom: 20px;
+}
+
+.leaflet-popup-content-wrapper {
+    border-radius: 8px;
+}
+
+/* Mobile/Tablet adjustments */
+@media (max-width: 768px) {
+    .legend-container {
+        top: 70px;
+        left: 12px;
+        right: 12px;
+        max-width: calc(100vw - 24px);
+        max-height: 40vh;
+        border-radius: 8px;
+    }
+
+    .theme-toggle-container {
+        top: 12px;
+        left: 12px;
+    }
+
+    .leaflet-top.leaflet-left {
+        left: 12px;
+        top: 12px;
+    }
+
+    .leaflet-top.leaflet-right {
+        right: 12px;
+        top: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .legend-container {
+        top: 100px;
+        left: 8px;
+        right: 8px;
+        max-width: calc(100vw - 16px);
+        max-height: 35vh;
+        font-size: 11px;
+        padding: 10px;
+        border-radius: 6px;
+    }
+
+    .theme-toggle-container {
+        top: 8px;
+        left: 8px;
+    }
+
+    .leaflet-top.leaflet-left {
+        left: 8px;
+        top: 8px;
+    }
+
+    .leaflet-top.leaflet-right {
+        right: 8px;
+        top: 8px;
+    }
+
+    .leaflet-control-zoom {
+        border-radius: 4px;
+    }
+
+    .leaflet-control-zoom-in,
+    .leaflet-control-zoom-out {
+        width: 32px;
+        height: 32px;
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    /* Leaflet controls smaller on very small screens */
+    .leaflet-control {
+        border-radius: 6px;
+    }
+
+    .leaflet-touch .leaflet-control-layers-toggle {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    .theme-toggle,
+    .leaflet-control {
+        transition: none !important;
+    }
+}

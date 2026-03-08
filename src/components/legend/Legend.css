@@ -1,0 +1,250 @@
+.legend {
+    background-color: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 16px;
+    width: 300px;
+    max-width: 100%;
+    box-shadow: 0 2px 8px var(--shadow-color);
+    font-size: 12px;
+    color: var(--text-primary);
+    z-index: 400;
+    --accent-color: var(--primary-color);
+}
+
+.legend-title {
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 12px;
+    color: var(--text-primary);
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.legend-toggle-btn {
+    background: none;
+    border: none;
+    color: var(--text-primary);
+    font-size: 20px;
+    cursor: pointer;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+    flex-shrink: 0;
+}
+
+.legend-toggle-btn:hover {
+    background-color: var(--bg-secondary);
+}
+
+.legend-content {
+    animation: slideDown 0.2s ease-out;
+}
+
+.legend-section {
+    margin-bottom: 12px;
+}
+
+.legend-section.mt-3 {
+    margin-top: 12px;
+}
+
+.legend-item-title {
+    font-weight: 500;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+}
+
+.altitude-gradient {
+    display: flex;
+    height: 30px;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    margin-bottom: 8px;
+}
+
+.altitude-stop {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    position: relative;
+}
+
+.altitude-color {
+    flex: 1;
+    width: 100%;
+}
+
+.altitude-label {
+    position: absolute;
+    bottom: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 10px;
+    white-space: nowrap;
+    color: var(--text-secondary);
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 0;
+    color: var(--text-primary);
+}
+
+.line-sample {
+    width: 24px;
+    height: 2px;
+    border-radius: 1px;
+    flex-shrink: 0;
+}
+
+.default-line {
+    background-color: rgb(100, 200, 255);
+}
+
+.hover-line {
+    background-color: rgb(255, 140, 0);
+    height: 3px;
+    margin-top: -1px;
+}
+
+.marker-sample {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.legend-checkbox {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    accent-color: var(--accent-color, #007bff);
+}
+
+.legend-checkbox + label {
+    cursor: pointer;
+    user-select: none;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        max-height: 0;
+    }
+    to {
+        opacity: 1;
+        max-height: 1000px;
+    }
+}
+
+/* Responsive - Tablets and up */
+@media (max-width: 768px) {
+    .legend {
+        width: calc(100vw - 32px);
+        max-width: 400px;
+        padding: 12px;
+        font-size: 11px;
+    }
+
+    .legend-title {
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+
+    .altitude-gradient {
+        height: 24px;
+        margin-bottom: 6px;
+    }
+
+    .altitude-label {
+        bottom: -16px;
+        font-size: 9px;
+    }
+}
+
+/* Mobile - Small screens */
+@media (max-width: 480px) {
+    .legend {
+        width: calc(100vw - 24px);
+        max-width: 100%;
+        padding: 10px;
+        font-size: 10px;
+        border-radius: 6px;
+    }
+
+    .legend-title {
+        font-size: 12px;
+        margin-bottom: 8px;
+        padding-bottom: 6px;
+    }
+
+    .legend-section {
+        margin-bottom: 10px;
+    }
+
+    .legend-section.mt-3 {
+        margin-top: 10px;
+    }
+
+    .legend-item-title {
+        font-size: 10px;
+        margin-bottom: 6px;
+    }
+
+    .altitude-gradient {
+        height: 20px;
+        margin-bottom: 4px;
+        border-radius: 3px;
+    }
+
+    .altitude-stop {
+        min-width: 20px;
+    }
+
+    .altitude-label {
+        bottom: -14px;
+        font-size: 8px;
+    }
+
+    .legend-item {
+        gap: 6px;
+        padding: 4px 0;
+        font-size: 10px;
+    }
+
+    .line-sample {
+        width: 20px;
+        min-width: 20px;
+    }
+
+    .marker-sample {
+        width: 20px;
+        height: 20px;
+        font-size: 12px;
+    }
+
+    .legend-checkbox {
+        width: 14px;
+        height: 14px;
+        min-width: 14px;
+        min-height: 14px;
+    }
+}

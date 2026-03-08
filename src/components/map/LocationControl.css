@@ -1,0 +1,82 @@
+.location-control {
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    background-color: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    z-index: 350;
+}
+
+.location-btn {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-primary);
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.2s ease;
+    color: var(--text-primary);
+    border-color: var(--border-color);
+    padding: 0;
+}
+
+.location-btn:hover {
+    background-color: var(--bg-secondary);
+    transform: scale(1.05);
+}
+
+.location-btn:active {
+    transform: scale(0.98);
+}
+
+.location-btn:focus-visible {
+    outline: 2px solid var(--primary-color);
+    outline-offset: -2px;
+}
+
+/* Light theme */
+[data-theme="light"] .location-control,
+[data-theme="light"] .location-btn {
+    --bg-primary: #ffffff;
+    --bg-secondary: #f5f5f5;
+    --text-primary: #1a1a1a;
+    --border-color: #e0e0e0;
+    --primary-color: #007bff;
+}
+
+/* Dark theme */
+[data-theme="dark"] .location-control,
+[data-theme="dark"] .location-btn {
+    --bg-primary: #2a2a2a;
+    --bg-secondary: #333333;
+    --text-primary: #e8e8e8;
+    --border-color: #444444;
+    --primary-color: #0ea5e9;
+}
+
+/* Leaflet bar customization */
+.leaflet-bar a {
+    border-radius: 0;
+}
+
+.leaflet-bar a:first-child {
+    border-radius: 4px 4px 0 0;
+}
+
+.leaflet-bar a:last-child {
+    border-radius: 0 0 4px 4px;
+}
+
+[data-theme="dark"] .leaflet-bar a,
+[data-theme="dark"] .leaflet-bar a:hover {
+    background-color: #2a2a2a;
+    color: #e8e8e8;
+    border-color: #444444;
+}
+
+[data-theme="dark"] .leaflet-bar a:hover {
+    background-color: #333333;
+}
