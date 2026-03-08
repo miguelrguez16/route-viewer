@@ -27,7 +27,7 @@ export const LocationControl: React.FC = () => {
                     opacity: 1,
                     fillOpacity: 0.8
                 })
-                    .bindPopup('📍 Tu ubicación')
+                    .bindPopup('📍 Your location')
                     .addTo(map);
             },
             () => {
@@ -46,8 +46,8 @@ export const LocationControl: React.FC = () => {
                 const container = L.DomUtil.create('div', 'leaflet-bar leaflet-control location-control');
                 const button = L.DomUtil.create('button', 'location-btn', container);
                 button.innerHTML = '📍';
-                button.title = 'Mi ubicación';
-                button.setAttribute('aria-label', 'Mi ubicación');
+                button.title = 'My location';
+                button.setAttribute('aria-label', 'My location');
 
                 L.DomEvent.on(button, 'click', (e) => {
                     L.DomEvent.stopPropagation(e);

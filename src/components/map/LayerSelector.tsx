@@ -12,25 +12,25 @@ export const LayerSelector = () => {
             icon: '🗺️'
         },
         satellite: {
-            name: 'Satélite',
+            name: 'Satellite',
             url: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
             attribution: '&copy; <a href="https://www.esri.com/">Esri</a>',
             icon: '🛰️'
         },
         terrain: {
-            name: 'Terreno',
+            name: 'Terrain',
             url: 'https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png',
             attribution: '&copy; <a href="https://opentopomap.org">OpenTopoMap</a>',
             icon: '🏔️'
         },
         dark: {
-            name: 'Oscuro',
+            name: 'Dark',
             url: 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
             icon: '🌙'
         },
         light: {
-            name: 'Claro',
+            name: 'Light',
             url: 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
             icon: '☀️'
